@@ -1,7 +1,7 @@
-/* about */
+/* about  */
 .about {
     padding: var(--spacing-xl) 0;
-    background-color: var(--bg-color);
+    background-color: var(--bg-alt);
 }
 
 .about-content {
@@ -33,15 +33,15 @@
     color: var(--text-primary);
 }
 
-.about-text h4{
+.about-text h4 {
     font-size: 1.2rem;
     color: var(--accent-color);
     margin-bottom: var(--spacing-md);
     font-weight: 600;
 }
 
-.about-text p{
-    color: var(--text-secondary);
+.about-text p {
+    color: var(--text-primary);
     margin-bottom: var(--spacing-md);
     font-size: 1.05rem;
 }
@@ -51,14 +51,15 @@
     gap: var(--spacing-md);
     margin-top: var(--spacing-lg);
     flex-wrap: wrap;
+    
 }
 
-.skill-item {
+.skills-item {
     background-color: var(--bg-color);
     padding: 10px 20px;
     border-radius: 5px;
     font-weight: 600;
-    color: var(--color-primary);
+    color: var(--text-primary);
     border: 1px solid #333;
     display: flex;
     align-items: center;
@@ -66,13 +67,15 @@
     transition: var(--transition);
 }
 
-.skill-item:hover {
+.skills-item:hover {
     border-color: var(--accent-color);
     transform: translateY(-3px);
 }
 
-.skill-item i {
+.skills-item i {
     color: var(--accent-color);
 }
 
-/* @media */
+.skills-item span{ 
+    color: var(--text-primary);
+}
