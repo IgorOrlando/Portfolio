@@ -5,7 +5,7 @@
     align-items: center;
     padding-top: var(--header-height);
     /* compensate set header */
-    /* background: linear-gradient(135deg, var(--bg-alt) 0%, var(--bg-color) 100%); */
+    background: linear-gradient(135deg, var(--bg-alt) 0%, var(--bg-color) 100%);
 }
 
 .hero-content {
@@ -31,7 +31,7 @@
 }
 
 .hero-text h2{
-    font-size: 1.1rem;
+    font-size: 2rem;
     color: var(--text-secondary);
     margin-bottom: var(--spacing-lg);
     max-width: 500px;
@@ -74,7 +74,7 @@
     width: 350px;
     height: 350px;
     background-color: var(--bg-alt);
-    border-radius: 40%;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
