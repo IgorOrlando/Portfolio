@@ -99,6 +99,13 @@
         font-size: 3rem;
     }
 
+    .hero-text h2,
+    .hero-text p {
+        max-width: 100%;
+        margin: var(--spacing-md) var(--spacing-xl);
+        
+    }
+
     .hero-btns {
         justify-content: center;
     }
