@@ -1,41 +1,37 @@
-/* import font */
+/* import google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
 
-:root{
-    /* var colors */
-    --bg-color: black;
-    --bg-alt: gray;
-    --text-primary: white;
-    --text-secundary: lightgray;
-    --accent-color: blue;
-    --accent-hover: cyan;
+:root {
 
-    /* var spacing */
-    --spacing-sm: 0.5rem; 
-    --spacing-md: 1rem; 
+    --bg-color: #0a0a0a;
+    --bg-alt: #171717;
+    --text-primary: #f3f4f6;
+    --text-secondary: #9ca3af;
+    --accent-color: #6366f1; 
+    --accent-hover: #4f46e5;
+    
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
     --spacing-lg: 2rem;
     --spacing-xl: 4rem;
-
-    /* var layout */
-    --container-width: 1200px; 
+    
+    --container-width: 1200px;
     --header-height: 80px;
-        
-    /* var transition */
+
     --transition: 0.3s ease;
 }
 
-/* set default settings */
-*{
-    padding: 0;
+* {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     font-family: 'Outfit', sans-serif;
     background-color: var(--bg-color);
     color: var(--text-primary);
@@ -43,29 +39,29 @@ body{
     overflow-x: hidden;
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
     transition: var(--transition);
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-img{
+img {
     max-width: 100%;
     display: block;
 }
 
-/* set default classes settings */
-.container{
+/* utils */
+.container {
     max-width: var(--container-width);
     margin: 0 auto;
     padding: 0 var(--spacing-md);
 }
 
-.btn{
+.btn {
     display: inline-block;
     padding: 12px 28px;
     background-color: var(--accent-color);
@@ -77,12 +73,12 @@ img{
     transition: var(--transition);
 }
 
-.btn:hover{
+.btn:hover {
     background-color: var(--accent-hover);
     transform: translateY(-2px);
 }
 
-.section-title{
+.section-title {
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: var(--spacing-xl);
