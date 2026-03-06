@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <!-- css -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
@@ -236,18 +238,18 @@
                         <span>Bassano Del Grappa, Vicenza, Italy</span>
                     </div>
                 </div>
-                <form class="contact-form">
+                <form id="contact-form" method="post" class="contact-form">
                     <!-- contact form -->
                     <div class="form-group">
-                        <input type="text" placeholder="Your Name" required>
+                        <input id="name" name="name" type="text" placeholder="Your Name" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="Your Email" required>
+                        <input id="email" name="email" type="email" placeholder="Your Email" required>
                     </div>
                     <div class="form-group">
-                        <textarea placeholder="Your Message" required></textarea>
+                        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
                     </div>
-                    <button type="submit" class="btn form-btn">Send Message</button>
+                    <button type="submit" class="btn form-btn" id="submit-btn">Send Message</button>
                 </form>
             </div>
         </section>
@@ -277,6 +279,7 @@
 
     <!-- js scripts -->
     <script src="js/script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </body>
 
 </html>
